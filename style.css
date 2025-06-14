@@ -1,0 +1,312 @@
+/* SmartShop Custom Styles */
+
+/* Main app styling */
+.main {
+    padding-top: 1rem;
+}
+
+/* Header styling */
+.main-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.main-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.main-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Chat container styling */
+.chat-container {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    min-height: 400px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.stContainer {
+    max-height: 400px;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+/* Chat messages styling */
+.stChatMessage {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.stChatMessage[data-testid="user"] {
+    background-color: #007bff;
+    color: white;
+    margin-left: 20%;
+}
+
+.stChatMessage[data-testid="assistant"] {
+    background-color: white;
+    border: 1px solid #e9ecef;
+    margin-right: 20%;
+}
+
+/* Sidebar styling */
+.css-1d391kg {
+    background-color: #f1f3f4;
+}
+
+/* Requirements display */
+.requirements-box {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    border-left: 4px solid #28a745;
+    margin-bottom: 1rem;
+}
+
+/* Product cards */
+.product-card {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e9ecef;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product-title {
+    color: #2c3e50;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.product-price {
+    color: #e74c3c;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.original-price {
+    color: #7f8c8d;
+    text-decoration: line-through;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.discount-badge {
+    background-color: #28a745;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+}
+
+.platform-badge {
+    background-color: #17a2b8;
+    color: white;
+    padding: 0.25rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.rating-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.rating-stars {
+    color: #ffc107;
+    margin-right: 0.5rem;
+}
+
+.feature-list {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 0.5rem 0;
+}
+
+.pros-cons {
+    margin-top: 1rem;
+}
+
+.pros {
+    color: #28a745;
+}
+
+.cons {
+    color: #dc3545;
+}
+
+/* Buttons */
+.stButton > button {
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    transform: translateY(-1px);
+}
+
+/* Search stats */
+.search-stats {
+    background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/* Loading spinner custom */
+.stSpinner {
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Comparison table */
+.comparison-table {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+/* Chat input styling */
+.stChatInput {
+    border-radius: 25px;
+    border: 2px solid #007bff;
+}
+
+/* Quick action buttons */
+.quick-action-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin: 0.25rem 0;
+}
+
+.quick-action-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Conversation status indicator */
+.conversation-status {
+    background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.conversation-status.ready {
+    background: linear-gradient(135deg, #00b894 0%, #00a085 100%);
+}
+
+/* Chat messages enhancement */
+.user-message {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 18px 18px 5px 18px;
+    margin: 0.5rem 0 0.5rem 20%;
+    max-width: 70%;
+    float: right;
+    clear: both;
+}
+
+.assistant-message {
+    background: white;
+    border: 1px solid #e9ecef;
+    padding: 1rem 1.5rem;
+    border-radius: 18px 18px 18px 5px;
+    margin: 0.5rem 20% 0.5rem 0;
+    max-width: 70%;
+    float: left;
+    clear: both;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Custom metrics */
+.metric-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.metric-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #007bff;
+}
+
+.metric-label {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .main-header h1 {
+        font-size: 2rem;
+    }
+    
+    .main-header p {
+        font-size: 1rem;
+    }
+    
+    .product-card {
+        padding: 1rem;
+    }
+    
+    .stChatMessage[data-testid="user"] {
+        margin-left: 10%;
+    }
+    
+    .stChatMessage[data-testid="assistant"] {
+        margin-right: 10%;
+    }
+}
+
+/* Hide Streamlit branding */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
